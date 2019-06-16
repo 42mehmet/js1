@@ -53,12 +53,9 @@ animals.unshift("fox2");
 animals;
 console.log(`Baktiginiz hayvan su indexte bulunuyor: ${animals.length}`);
 
-
-
-
 //------MORE JAVASCRİPT---------
 //--1--
-const rent = require('rent');
+const rent = require("rent");
 function sum(a, b, c) {
   return a + b + c;
 }
@@ -74,10 +71,10 @@ merhaba();
 merhaba();
 
 function sguare(x) {
-  return x*x;
+  return x * x;
 }
 function cube(x) {
-  return x*x*x ;
+  return x * x * x;
 }
 let a = sguare(12);
 a = cube(a);
@@ -102,27 +99,27 @@ function colorCAr(color) {
 let f = colorCAr();
 
 //--------3-----------
-let object1 = { a: 'somestring',  b: 42,  c: false};
+let object1 = { a: "somestring", b: 42, c: false };
 console.log(Object.keys(object1));
 console.log(Object.values(object1));
 
 //------4------------
 
-function vehiclType(color,code) {
-  if( code === 1){
-   console.log (`a ${color} motosiklet `) ;
-  } else{
+function vehiclType(color, code) {
+  if (code === 1) {
+    console.log(`a ${color} motosiklet `);
+  } else {
     console.log(`a  ${color} araba`);
   }
 }
-vehiclType("black",2);
+vehiclType("black", 2);
 
 let test2 = function(color, code) {
- if (code === 1) {
-   console.log("a ", color, " motosiklet");
- } else {
-   console.log("a ", color, "araba");
- }
+  if (code === 1) {
+    console.log("a ", color, " motosiklet");
+  } else {
+    console.log("a ", color, "araba");
+  }
 };
 test2("yellow", 2);
 
@@ -135,23 +132,23 @@ if (3 === 3) {
 //--5--
 console.log(3 === 3 ? "yes" : "no");
 
-function vehiclType(color,code,) {
-  if( code === 1){
-   console.log (`a ${color} motosiklet `) ;
-  } else{
+function vehiclType(color, code) {
+  if (code === 1) {
+    console.log(`a ${color} motosiklet `);
+  } else {
     console.log(`a  ${color} araba`);
   }
 }
-vehiclType("black",2)
+vehiclType("black", 2);
 
-function type(color,code,age) {
-  if (age === 0){
+function type(color, code, age) {
+  if (age === 0) {
     console.log(`new`);
-  }else  ( code === 1){
-    console.log (`a ${color} motosiklet `) ;
-   } else{
-     console.log(`a  ${color} araba`);
-   }
+    //}else  ( code === 1){
+    console.log(`a ${color} motosiklet `);
+  } else {
+    console.log(`a  ${color} araba`);
+  }
 }
 
 //----6-----
@@ -176,12 +173,12 @@ function vehic(color, code, age) {
   if (code === 1) console.log(`a ${status}, ${color} car`);
   else if (code === 2) console.log(`a ${status} ${color} motorbike`);
 }
- vehic("red", 2, 1);
+vehic("red", 2, 1);
 
 //--7---
- var abd = ["motorbike", "caravan", "bike"];
+var abd = ["motorbike", "caravan", "bike"];
 // //--8--
- console.log(abd[2]);
+console.log(abd[2]);
 
 // //---9---
 function vehicle(color, age, motorbike, caravan, bike) {
@@ -201,11 +198,12 @@ function vehicle(color, age, motorbike, caravan, bike) {
   if (motorbike === 1) console.log(`a ${status} ${color} motorbike`);
   else if (caravan === 2) console.log(`a ${status} ${color} caravan`);
   else if (bike === 3) console.log(`a ${status} ${color} bike`);
-  console.log(`Amazing Joe's Garage, we service cars ${motorbike} ${caravan}  and ${bikes}.`);
+  console.log(
+    `Amazing Joe's Garage, we service cars ${motorbike} ${caravan}  and ${bikes}.`
+  );
 }
 
- vehicle("red", 0, 2,2)
+vehicle("red", 0, 2, 2);
 //---12--- ve --13---
 let obj = "";
 let obj = "talip, adem, mehmet";
-
